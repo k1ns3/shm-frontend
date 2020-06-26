@@ -1,0 +1,45 @@
+.goods
+  display: block
+  padding-bottom: 100px
+  &-block
+    min-height: 375px
+    display: flex
+    border: 1px solid #e5e5e5
+    margin-top: 25px
+    margin-bottom: 25px
+  .g-tabl
+    width: 100%
+    padding-left: 25px
+    padding-right: 25px
+    padding-top: 20px
+    padding-bottom: 20px
+    &__name
+      font-weight: 400
+      text-transform: uppercase
+      font-size: 18px
+      color: #3f3f3f
+      margin-bottom: 10px
+      +bold
+    &__item
+      text-decoration: none
+      display: flex
+      justify-content: space-between
+      padding-top: 5px
+      padding-bottom: 5px
+      font-size: 16px
+      border-top: 1px solid #e5e5e5
+    &__ed
+      text-decoration: none
+      +bold
+  .go-price
+    display: flex
+    padding-top: 40px
+@media (max-width: 576px)
+  .goods
+    &-block
+      min-height: 375px
+      display: flex
+      flex-direction: column
+      border: 1px solid #e5e5e5
+      margin-top: 25px
+      margin-bottom: 25px

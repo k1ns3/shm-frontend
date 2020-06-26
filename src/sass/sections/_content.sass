@@ -1,0 +1,182 @@
+.main
+  &-block 
+    width: 80%
+    float: right
+  &-top
+    width: 100%
+    height: 52px
+    border-bottom: 1px solid #e0e0e0
+  &-bottom
+    margin: 40px 13px 0px
+    width: 100%
+    height: 52px
+    border-top: 1px solid #e0e0e0
+    border-bottom: 1px solid #e0e0e0
+    margin-bottom: 70px
+    &__content
+      margin: 0px 13px
+.sort
+    padding: 11px 0
+    display: flex
+    flex-direction: space-between
+    float: right  
+    &_top 
+      &-header
+        margin: 6px
+        padding: 0 12px
+        +bold
+      &-content   
+        padding: 0 12px 
+        margin: 0px 0px 0px 12px  
+        text-decoration: none
+        color: $top     
+        line-height: 30px
+        &__active
+          &_top
+            border-radius: 15px
+            padding: 5px 12px 
+            margin: 0px 0px 0px 12px  
+            background-color: #5e6364
+            color: #fff
+            text-decoration: none
+          &_bottom
+            box-sizing: border-box
+            padding: 6px 14px 
+            margin: 0px 3px 
+            width: 34px
+            height: 34px    
+            border-radius: 20px
+            background-color: #5e6364
+            color: #fff
+            text-decoration: none
+    &-header
+      margin: 6px
+      padding: 0 12px
+      +bold
+    &-content   
+      padding: 0 12px 
+      margin: 0px 0px 0px 12px  
+      text-decoration: none
+      color: $top     
+      line-height: 30px
+      &__active
+        &_top
+          border-radius: 15px
+          padding: 5px 12px 
+          margin: 0px 0px 0px 12px  
+          background-color: #5e6364
+          color: #fff
+          text-decoration: none
+        &_bottom
+          box-sizing: border-box
+          padding: 6px 14px 
+          margin: 0px 3px 
+          width: 34px
+          height: 34px    
+          border-radius: 20px
+          background-color: #5e6364
+          color: #fff
+          text-decoration: none      
+.catalog
+  display: flex
+  flex-direction: space-between
+.product-container
+    width: 33.3%
+    height: 480px
+    position: relative
+.product
+    max-height: 441px
+    z-index: 2
+    padding: 12px
+    background-color: $bg-secondary
+    transition: none
+    position: absolute
+    border-radius: 3px
+    text-align: center
+    &:hover
+      .price-b
+        transform: translateY(0)
+        opacity: 1
+    &-img
+      width: 96%
+      max-width: 329px
+      max-height: 329px
+      &__ice
+        width: 25px 
+        height: 25px
+        position: absolute
+        z-index: 999
+        margin-left: 75%
+        margin-top: 3%
+      &__sun
+        width: 25px 
+        height: 25px        
+        position: absolute
+        z-index: 998
+        margin-left: 75%
+        margin-top: 3%
+.tovar
+  display: flex
+  flex-direction: column
+  &-title
+    margin-bottom: 5px
+    text-decoration: none
+    +bold
+    &__small
+      font-size: 13px
+      +bold
+      color: $top
+      text-decoration: none
+  .price
+    margin-top: 5px
+    font-size: 15px
+    line-height: 15px
+    +bold
+  .currency
+    font: 12.5 currency
+    margin: 0px 0px 0px 4px
+  .price-b
+    opacity: 0
+    transition: 0.2s
+    padding: 10px 0px 0px 0px
+    align-items: center
+    transform: translateY(-100%)
+.warning
+  &-block
+    margin: 350px 40px
+    text-align: center
+    width: 100%
+    display: flex
+    flex-direction: column
+    &__title
+      font-size: 35px
+      +bold
+      color: $text-color-light
+    &__text
+      +bold
+      font-size: 20px
+      color: $text-color
+@media (max-width: 1199px)
+  .product-container
+    width: 33.3%
+    height: 350px
+    position: relative  
+@media (max-width: 991px)
+  .product-container
+    width: 33.3%
+    height: 300px
+    position: relative
+@media (max-width: 576px)
+  .main
+    &-block 
+      width: 100%
+      float: right
+  .catalog
+    flex-direction: column
+    flex-wrap: wrap
+  .sort_top
+    display: none
+  .product-container
+    width: 100%
+    height: 420px
+    position: relative

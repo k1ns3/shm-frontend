@@ -1,0 +1,139 @@
+.form-flat
+  padding-bottom: 20px
+  &__title
+    font-size: 25px
+    padding: 20px 0 6px
+    +bold
+  .methods
+    margin: 10px 0 20px
+    display: flex
+    max-width: 700px
+    .flat
+      border-radius: 8px
+      border: 1px solid #b5b5b5
+      margin: 0px 13px 0px 0px
+      padding: 20px 20px 30px
+      width: 50%
+      height: 171px
+      &:hover
+        border-color: #ff7800
+        cursor: pointer
+      &-title
+        margin: 0px 20px 0px 0px
+        padding: 0px 0px 6px
+        font-size: 20px
+        +bold
+      p
+        font-size: 16px
+        +light
+    .ship
+      border-radius: 8px
+      border: 1px solid #b5b5b5
+      margin: 0px 13px 0px 0px
+      padding: 20px 20px 30px
+      width: 50%
+      height: 171px
+      &:hover
+        border-color: #ff7800
+        cursor: pointer
+      &-title
+        margin: 0px 20px 0px 0px
+        padding: 0px 0px 6px
+        font-size: 20px
+        +bold  
+      p
+        font-size: 16px
+        +light
+.pad-sm
+  padding: 8px 0px
+  .pad
+    font-size: 16px
+    display: flex
+    flex-direction: space-between
+    +light
+    &-name
+      padding: 8px 0px 0px
+      width: 20%
+      &_app
+        text-align: center
+        padding: 8px 0px 0px
+        width: 16%
+      &_housing
+        text-align: center
+        padding: 8px 0px 0px
+        width: 16%
+  .form-block
+    padding: 25px 60px 25px 30px
+    font-size: 16px
+    border-radius: 15px
+    background: #edf4fa
+    width: 100%
+    max-width: 700px
+    margin-bottom: 20px
+  .fluid
+    width: 80%
+    &-last
+      width: 16%
+input[type=email], input[type=password], input[type=text] 
+    border: 1px solid #d8d8d8
+    background: #fff
+    border-radius: 4px
+    height: 36px!important
+    padding: 8px!important
+    line-height: 20px!important
+.hit
+  font-size: 12px
+  color:#717171
+  +light
+@media (max-width: 991px)
+  .pad-sm
+    padding: 8px 0px
+    .pad
+      font-size: 13px
+@media (max-width: 576px)
+  .form-flat
+    padding-bottom: 20px
+    &__title
+      font-size: 25px
+      padding: 20px 0 6px
+      +bold
+    .methods
+      margin: 10px 0 20px
+      display: flex
+      max-width: 700px
+      .flat
+        border-radius: 8px
+        border: 1px solid #b5b5b5
+        margin: 0px 13px 0px 0px
+        padding: 20px 20px 30px
+        width: 50%
+        height: 200px
+        &:hover
+          border-color: #ff7800
+          cursor: pointer
+        &-title
+          margin: 0px 20px 0px 0px
+          padding: 0px 0px 6px
+          font-size: 16px
+          +bold
+        p
+          font-size: 12px
+          +light
+      .ship
+        border-radius: 8px
+        border: 1px solid #b5b5b5
+        margin: 0px 13px 0px 0px
+        padding: 20px 20px 30px
+        width: 50%
+        height: 200px
+        &:hover
+          border-color: #ff7800
+          cursor: pointer
+        &-title
+          margin: 0px 20px 0px 0px
+          padding: 0px 0px 6px
+          font-size: 16px
+          +bold  
+        p
+          font-size: 12px
+          +light

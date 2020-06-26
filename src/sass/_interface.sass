@@ -1,0 +1,54 @@
+body 
+  +light
+  color: $text-color
+  background-color: #f2f2f2
+.button-o
+  border: 2px solid $primary
+  padding: 17px 22px
+  font-size: 12px
+  text-decoration: none
+  text-transform: uppercase 
+  color: $primary
+  +bold 
+  background-color: #ffffff
+.main-button
+  padding: 5px 20px
+  border-radius: 4px
+  background: #dbdbdb
+  margin: 0px 0px 0px 3px
+  font-size: 16px
+  line-height: 1.15
+  &__text
+    color: #2b2b2b
+    margin: 1px 0 3px 0
+    text-decoration: none
+  &:hover
+    background: #2b2b2b
+    color: #fff
+.price-button
+  padding: 5px 15px
+  border-radius: 4px
+  background: #dbdbdb
+  margin: 0px 0px 0px 3px
+  font-size: 16px
+  line-height: 1.15
+  &__text
+    color: #2b2b2b
+    margin: 1px 0 3px 0
+    text-decoration: none
+  &:hover
+    background: #2b2b2b
+    color: #fff
+.button
+  border: none
+  padding: 25px 45px
+  font-size: 14px 
+  text-transform: uppercase
+  color: #ffffff
+  background-color: $primary
+  +bold
+.bg-secondary
+  background: $bg-secondary
+@media (max-width: 576px)
+  .button-o
+    font-size: 10px

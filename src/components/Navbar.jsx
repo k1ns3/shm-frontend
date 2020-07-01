@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -33,9 +34,9 @@ function Navbar() {
                 Remshinmontage@gmail.com
               </a>
             </div>
-            <a className="button-o navbar__button" href="cart.html">
+            <Link to="/cart" className="button-o navbar__button">
               Товаров в корзине
-            </a>
+            </Link>
           </div>
         </div>
       </div>

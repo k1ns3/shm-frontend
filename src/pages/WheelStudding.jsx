@@ -2,7 +2,7 @@ import React from 'react';
 
 import { wheelQuatro } from '../assets/img';
 
-function Knitting() {
+function WheelStudding() {
   return (
     <div class="cart">
       <div class="container">
@@ -90,4 +90,4 @@ function Knitting() {
   );
 }
 
-export default Knitting;
+export default WheelStudding;

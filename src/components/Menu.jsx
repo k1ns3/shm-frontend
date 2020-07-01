@@ -22,7 +22,7 @@ function Menu() {
             <Link to="#" className="menu__link">
               О компании
             </Link>
-            <Link to="#" className="menu__link">
+            <Link to="/info" className="menu__link">
               Информация
             </Link>
             <Link to="#" className="menu__link">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Ice, Sun, wheelf32 } from '../img';
+import { Ice, Sun, wheelf32 } from '../assets/img';
 
 function ContentPage() {
   return (

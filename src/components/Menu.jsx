@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Menu() {
   return (
@@ -6,27 +7,27 @@ function Menu() {
       <div className="menu">
         <div className="container">
           <nav className="menu__nav">
-            <a href="index.html" className="menu__link">
+            <Link to="/" className="menu__link">
               Главная
-            </a>
-            <a href="shin.html" className="menu__link">
+            </Link>
+            <Link to="shinomontaj" className="menu__link">
               Шиномонтаж
-            </a>
-            <a href="safe.html" className="menu__link">
+            </Link>
+            <Link to="#" className="menu__link">
               Сезонное хранение
-            </a>
-            <a href="doshipovka.html" className="menu__link">
+            </Link>
+            <Link to="#" className="menu__link">
               Дошиповка
-            </a>
-            <a href="#" className="menu__link">
+            </Link>
+            <Link to="#" className="menu__link">
               О компании
-            </a>
-            <a href="info.html" className="menu__link">
+            </Link>
+            <Link to="#" className="menu__link">
               Информация
-            </a>
-            <a href="#" className="menu__link">
+            </Link>
+            <Link to="#" className="menu__link">
               Контакты
-            </a>
+            </Link>
           </nav>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Navbar() {
   return (
@@ -29,8 +29,7 @@ function Navbar() {
               </a>
               <a
                 className="navbar_email navbar__small-text"
-                href="mailto:Remshinmontage@gmail.com"
-              >
+                href="mailto:Remshinmontage@gmail.com">
                 Remshinmontage@gmail.com
               </a>
             </div>

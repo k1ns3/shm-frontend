@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
+import { Route } from 'react-router-dom';
 
-import { Menu, Navbar, Hero, Aside, ContentPage } from "./components";
-import Footer from "./components/Footer";
+import { Menu, Navbar, Footer } from './components';
+import { Home, TireFitting } from './pages';
 
 function App() {
   return (
@@ -9,11 +10,10 @@ function App() {
       <header className="header">
         <Menu />
         <Navbar />
-        <Hero />
       </header>
       <main>
-        <Aside />
-        <ContentPage />
+        <Route path="/" component={Home} exact />
+        <Route path="/shinomontaj" component={TireFitting} exact />
       </main>
       <footer className="footer">
         <Footer />

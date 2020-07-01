@@ -1,35 +1,8 @@
 import React from "react";
 
-function Header() {
+function Navbar() {
   return (
-    <header className="header">
-      <div className="menu">
-        <div className="container">
-          <nav className="menu__nav">
-            <a href="index.html" className="menu__link">
-              Главная
-            </a>
-            <a href="shin.html" className="menu__link">
-              Шиномонтаж
-            </a>
-            <a href="safe.html" className="menu__link">
-              Сезонное хранение
-            </a>
-            <a href="doshipovka.html" className="menu__link">
-              Дошиповка
-            </a>
-            <a href="#" className="menu__link">
-              О компании
-            </a>
-            <a href="info.html" className="menu__link">
-              Информация
-            </a>
-            <a href="#" className="menu__link">
-              Контакты
-            </a>
-          </nav>
-        </div>
-      </div>
+    <div>
       <div className="navbar">
         <div className="container">
           <div className="navbar-wrap">
@@ -67,15 +40,8 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="hero">
-        <div className="container">
-          <h1 className="hero__title">Выездной шиномонтаж</h1>
-          <span className="hero__subtitle">от 2 000 р</span>
-          <button className="button hero__button">Заказать шиномонтаж</button>
-        </div>
-      </div>
-    </header>
+    </div>
   );
 }
 
-export default Header;
+export default Navbar;

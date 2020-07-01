@@ -16,7 +16,7 @@ function Menu() {
             <Link to="/storage" className="menu__link">
               Сезонное хранение
             </Link>
-            <Link to="#" className="menu__link">
+            <Link to="/knitting" className="menu__link">
               Дошиповка
             </Link>
             <Link to="#" className="menu__link">

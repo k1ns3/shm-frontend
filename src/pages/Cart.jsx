@@ -4,92 +4,92 @@ import { wheelf32, deleteSvg } from '../assets/img';
 
 function Cart() {
   return (
-    <div class="cart">
-      <div class="container">
-        <table class="list-product">
+    <div className="cart">
+      <div className="container">
+        <table className="list-product">
           <thead>
             <tr>
-              <td class="name">Товар</td>
-              <td class="quantity">Количество</td>
-              <td class="price">Цена</td>
-              <td class="delete"></td>
+              <td className="name">Товар</td>
+              <td className="quantity">Количество</td>
+              <td className="price">Цена</td>
+              <td className="delete"></td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="name">
-                <img src={wheelf32} alt="tovar" class="name-img" />
-                <div class="name-text">
-                  <span class="name-title">NZ F-32</span>
-                  <span class="name-title__small">
+              <td className="name">
+                <img src={wheelf32} alt="tovar" className="name-img" />
+                <div className="name-text">
+                  <span className="name-title">NZ F-32</span>
+                  <span className="name-title__small">
                     Литой , белый с полированной лицевой поверхностью
                   </span>
                 </div>
               </td>
-              <td class="quantity">
-                <div class="spinCtrl">
-                  <button class="decrease">-</button>
-                  <button class="increase">+</button>
+              <td className="quantity">
+                <div className="spinCtrl">
+                  <button className="decrease">-</button>
+                  <button className="increase">+</button>
                   <input type="text" name="quantity" value="2" />
                 </div>
               </td>
-              <td class="price">
-                <div class="price-box tb">
+              <td className="price">
+                <div className="price-box tb">
                   <span>
-                    12 190 <span class="currency">₽</span>
+                    12 190 <span className="currency">₽</span>
                   </span>
                 </div>
               </td>
-              <td class="delete">
+              <td className="delete">
                 <a href="#" title="Удалить">
-                  <img class="delete-img" src={deleteSvg} alt="delete" />
+                  <img className="delete-img" src={deleteSvg} alt="delete" />
                 </a>
               </td>
             </tr>
             <tr>
-              <td class="name">
-                <img src={wheelf32} alt="tovar" class="name-img" />
-                <div class="name-text">
-                  <span class="name-title">NZ F-32</span>
-                  <span class="name-title__small">
+              <td className="name">
+                <img src={wheelf32} alt="tovar" className="name-img" />
+                <div className="name-text">
+                  <span className="name-title">NZ F-32</span>
+                  <span className="name-title__small">
                     Литой , белый с полированной лицевой поверхностью
                   </span  >
                 </div>
               </td>
-              <td class="quantity">
-                <div class="spinCtrl">
-                  <button class="decrease">-</button>
-                  <button class="increase">+</button>
+              <td className="quantity">
+                <div className="spinCtrl">
+                  <button className="decrease">-</button>
+                  <button className="increase">+</button>
                   <input type="text" name="quantity" value="2" />
                 </div>
               </td>
-              <td class="price">
-                <div class="price-box tb">
+              <td className="price">
+                <div className="price-box tb">
                   <span>
-                    12 190 <span class="currency">₽</span>
+                    12 190 <span className="currency">₽</span>
                   </span>
                 </div>
               </td>
-              <td class="delete">
+              <td className="delete">
                 <a href="#" title="Удалить">
-                  <img class="delete-img" src={deleteSvg} alt="delete" />
+                  <img className="delete-img" src={deleteSvg} alt="delete" />
                 </a>
               </td>
             </tr>
           </tbody>
         </table>
-        <div class="result">
-          <div class="itog">Итог</div>
-          <div class="summa">
-            24 380<span class="currency">₽</span>
+        <div className="result">
+          <div className="itog">Итог</div>
+          <div className="summa">
+            24 380<span className="currency">₽</span>
           </div>
         </div>
-        <div class="buy">
-          <a href="#" class="buy-button__retry">
+        <div className="buy">
+          <a href="#" className="buy-button__retry">
             Продолжить покупки
           </a>
 
-          <a href="form.html" class="buy-button__buy">
+          <a href="form.html" className="buy-button__buy">
             Оформить заказ
           </a>
         </div>

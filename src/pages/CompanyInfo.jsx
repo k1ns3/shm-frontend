@@ -2,11 +2,11 @@ import React from 'react';
 
 function CompanyInfo() {
   return (
-    <div class="cart">
-      <div class="container">
-        <div class="info">
-          <div class="info-block">
-            <div class="info-block__title">
+    <div className="cart">
+      <div className="container">
+        <div className="info">
+          <div className="info-block">
+            <div className="info-block__title">
               Штраф за отсутствие знака «шипы»
             </div>
             <p>
@@ -16,7 +16,7 @@ function CompanyInfo() {
               «Шипы». Санкции за отсутствие знака «Шипы» предусмотрены ч. 1 ст.
               12.5 КоАП РФ. Это предупреждение или штраф в размере 500 рублей.
             </p>
-            <div class="info-block__title">Ответственность при ДТП</div>
+            <div className="info-block__title">Ответственность при ДТП</div>
             <p>
               Игнорируя разумные требования законодательства нужно быть готовым
               к негативным последствиям. В случае возникновения

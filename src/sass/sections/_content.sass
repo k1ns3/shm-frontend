@@ -106,15 +106,15 @@
         height: 25px
         position: absolute
         z-index: 999
-        margin-left: 75%
-        margin-top: 3%
+        margin-left: 85%
+        margin-top: 5%
       &__sun
         width: 25px 
         height: 25px        
         position: absolute
         z-index: 998
-        margin-left: 75%
-        margin-top: 3%
+        margin-left: 85%
+        margin-top: 5%
 .tovar
   display: flex
   flex-direction: column
@@ -153,14 +153,22 @@
       +bold
       color: $text-color-light
     &__text
-      +bold
       font-size: 20px
       color: $text-color
 @media (max-width: 1199px)
   .product-container
     width: 33.3%
     height: 350px
-    position: relative  
+    position: relative 
+  .product
+    &-img
+      &__sun
+        margin-left: 80%
+        margin-top: 6%
+      &__ice
+        margin-left: 80%
+        margin-top: 6%
+
 @media (max-width: 991px)
   .product-container
     width: 33.3%

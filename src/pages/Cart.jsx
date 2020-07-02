@@ -53,7 +53,7 @@ function Cart() {
                   <span class="name-title">NZ F-32</span>
                   <span class="name-title__small">
                     Литой , белый с полированной лицевой поверхностью
-                  </span>
+                  </span  >
                 </div>
               </td>
               <td class="quantity">

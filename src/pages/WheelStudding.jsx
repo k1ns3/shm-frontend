@@ -3,6 +3,7 @@ import React from 'react';
 import { wheelQuatro } from '../assets/img';
 
 function WheelStudding() {
+  {/*TODO: отформатировать компонент*/}
   return (
     <div className="cart">
       <div className="container">

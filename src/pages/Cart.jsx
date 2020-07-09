@@ -3,6 +3,9 @@ import React from 'react';
 import { wheelf32, deleteSvg } from '../assets/img';
 
 function Cart() {
+  {
+    /*TODO: перевести на гриды, заменить переключатели*/
+  }
   return (
     <div className="cart">
       <div className="container">

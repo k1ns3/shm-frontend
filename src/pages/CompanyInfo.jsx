@@ -1,6 +1,9 @@
 import React from 'react';
 
 function CompanyInfo() {
+  {
+    /*TODO: отформатировать на другие checkboxes. Разобраться со стилизацией*/
+  }
   return (
     <div className="cart">
       <div className="container">

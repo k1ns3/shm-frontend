@@ -25,6 +25,7 @@ function TireFitting() {
               </p>
               <span className="mfilter__line"></span>
             </div>
+            {/*TODO: перекинуть в массив*/}
             <div className="shin-block__title-item">R13 - 1 300 руб</div>
             <div className="shin-block__title-item">R14 - 1 500 руб</div>
             <div className="shin-block__title-item">R15 - 1 800 руб</div>

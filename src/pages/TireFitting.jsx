@@ -48,11 +48,11 @@ function TireFitting() {
         <div className="shin-block__title-item">R22 - 4 500 руб</div>
         <span className="mfilter__line"></span>
         <p className="shin-block__title-small">Порошковая окраска дисков</p>
-        <div className="shin-block__title-item"> Диск 13" - 1 200 руб</div>
+        <div className="shin-block__title-item">Диск 13" - 1 200 руб</div>
         <div className="shin-block__title-item">Диск 14" - 1 200 руб</div>
         <div className="shin-block__title-item">Диск 15" - 1 500 руб</div>
         <div className="shin-block__title-item">Диск 16" - 1 700 руб</div>
-        <div className="shin-block__title-item"> Диск 17" - 2 000 руб</div>
+        <div className="shin-block__title-item">Диск 17" - 2 000 руб</div>
         <div className="shin-block__title-item">Диск 18" - 2 400 руб</div>
         <div className="shin-block__title-item">Диск 19" - 2 800 руб</div>
         <div className="shin-block__title-item">

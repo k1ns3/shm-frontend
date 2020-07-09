@@ -29,7 +29,7 @@ function Cart() {
               <div className="spinCtrl">
                 <button className="decrease">-</button>
                 <button className="increase">+</button>
-                <input type="text" name="quantity" value="2" />
+                <input type="text" name="quantity" defaultValue={2} />
               </div>
             </td>
             <td className="price">
@@ -59,7 +59,7 @@ function Cart() {
               <div className="spinCtrl">
                 <button className="decrease">-</button>
                 <button className="increase">+</button>
-                <input type="text" name="quantity" value="2" />
+                <input type="text" name="quantity" defaultValue={3} />
               </div>
             </td>
             <td className="price">

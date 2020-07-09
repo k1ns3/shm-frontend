@@ -57,15 +57,11 @@ function App() {
       </header>
       <main>
         <Route path="/" component={Home} exact />
-        <div className="cart">
-          <div className="container">
-            <Route path="/shinomontaj" component={TireFitting} exact />
-            <Route path="/storage" component={WheelStorage} exact />
-            <Route path="/knitting" component={WheelStudding} exact />
-            <Route path="/info" component={CompanyInfo} exact />
-            <Route path="/Cart" component={Cart} exact />
-          </div>
-        </div>
+        <Route path="/shinomontaj" component={TireFitting} exact />
+        <Route path="/storage" component={WheelStorage} exact />
+        <Route path="/knitting" component={WheelStudding} exact />
+        <Route path="/info" component={CompanyInfo} exact />
+        <Route path="/Cart" component={Cart} exact />
       </main>
       <footer className="footer">
         <Footer />

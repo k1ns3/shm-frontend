@@ -24,10 +24,10 @@ function Navbar({ menuItems }) {
       <div className={!activeMenuButton ? 'menu' : 'menu menu_active'}>
         <div className="container">
           <nav className="menu__nav">
-            {activeMenuButton &&
+            {menuItems &&
               menuItems.map((item) => (
                 <Link
-                  onClick={toggleMenuButton}
+                  onClick={() => setActiveMenuButton(false)}
                   key={item.id}
                   to={item.link}
                   className="menu__link">

@@ -87,7 +87,6 @@ function Cart() {
         <a href="#" className="buy-button__retry">
           Продолжить покупки
         </a>
-
         <a href="form.html" className="buy-button__buy">
           Оформить заказ
         </a>

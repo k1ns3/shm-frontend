@@ -1,6 +1,9 @@
 import React from 'react';
 
 function Aside() {
+  {
+    /*TODO: отформатировать на другие checkboxes. Разобраться со стилизацией*/
+  }
   return (
     <div className="sidebar bg-secondary">
       <div className="container">

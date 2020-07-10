@@ -9,6 +9,7 @@ import {
   CompanyInfo,
   WheelStudding,
   Cart,
+  ProductCardDescription,
 } from './pages';
 
 const menuLinks = [
@@ -62,6 +63,7 @@ function App() {
         <Route path="/knitting" component={WheelStudding} exact />
         <Route path="/info" component={CompanyInfo} exact />
         <Route path="/Cart" component={Cart} exact />
+        <Route path="/carditem" component={ProductCardDescription} exact />
       </main>
       <footer className="footer">
         <Footer />

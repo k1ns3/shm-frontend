@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Ice, Sun, wheelf32 } from '../assets/img';
-import { FilterMenu } from './index';
+import { ProductCard, FilterMenu } from './index';
 
 function ContentPage({ sortItems }) {
   const [activeSortItem, setActiveSortItem] = React.useState(0);
@@ -11,7 +11,7 @@ function ContentPage({ sortItems }) {
   };
 
   return (
-    <content className="main">
+    <div className="main">
       <div className="container">
         <div className="main-block">
           <div className="main-top">
@@ -39,154 +39,14 @@ function ContentPage({ sortItems }) {
           </div>
           <div className="container"></div>
           <div className="catalog">
-            <div className="product-container">
-              <img className="product-img__ice" src={Ice} alt="ice" />
-              <div className="product">
-                <a href="more.html">
-                  <img className="product-img" src={wheelf32} alt="" />
-                </a>
-                <div className="tovar">
-                  <span className="tovar-title">NZ F-32</span>
-                  <span className="tovar-title__small">Код товара</span>
-                  <span className="tovar-title__small">
-                    Литой , белый с полированной лицевой поверхностью
-                  </span>
-                  <div className="price price-box">
-                    <span>
-                      12 190 <span className="currency">₽</span>
-                    </span>
-                  </div>
-                  <div className="price-b">
-                    <a className="price-button price-button__text" href="#">
-                      В корзину
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="product-container">
-              <img className="product-img__sun" src={Sun} alt="sun" />
-              <div className="product">
-                <a href="more.html">
-                  <img className="product-img" src={wheelf32} alt="" />
-                </a>
-                <div className="tovar">
-                  <span className="tovar-title">NZ F-32</span>
-                  <span className="tovar-title__small">Код товара</span>
-                  <span className="tovar-title__small">
-                    Литой , белый с полированной лицевой поверхностью
-                  </span>
-                  <div className="price price-box">
-                    <span>
-                      12 190 <span className="currency">₽</span>
-                    </span>
-                  </div>
-                  <div className="price-b">
-                    <a className="price-button price-button__text" href="#">
-                      В корзину
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="product-container">
-              <div className="product">
-                <a href="more.html">
-                  <img className="product-img" src={wheelf32} alt="" />
-                </a>
-                <div className="tovar">
-                  <span className="tovar-title">NZ F-32</span>
-                  <span className="tovar-title__small">Код товара</span>
-                  <span className="tovar-title__small">
-                    Литой , белый с полированной лицевой поверхностью
-                  </span>
-                  <div className="price price-box">
-                    <span>
-                      12 190 <span className="currency">₽</span>
-                    </span>
-                  </div>
-                  <div className="price-b">
-                    <a className="price-button price-button__text" href="#">
-                      В корзину
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProductCard tireType={Ice} />
+            <ProductCard tireType={Sun} />
+            <ProductCard tireType={Ice} />
           </div>
           <div className="catalog">
-            <div className="product-container">
-              <div className="product">
-                <a href="more.html">
-                  <img className="product-img" src={wheelf32} alt="" />
-                </a>
-                <div className="tovar">
-                  <span className="tovar-title">NZ F-32</span>
-                  <span className="tovar-title__small">Код товара</span>
-                  <span className="tovar-title__small">
-                    Литой , белый с полированной лицевой поверхностью
-                  </span>
-                  <div className="price price-box">
-                    <span>
-                      12 190 <span className="currency">₽</span>
-                    </span>
-                  </div>
-                  <div className="price-b">
-                    <a className="price-button price-button__text" href="#">
-                      В корзину
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="product-container">
-              <div className="product">
-                <a href="more.html">
-                  <img className="product-img" src={wheelf32} alt="" />
-                </a>
-                <div className="tovar">
-                  <span className="tovar-title">NZ F-32</span>
-                  <span className="tovar-title__small">Код товара</span>
-                  <span className="tovar-title__small">
-                    Литой , белый с полированной лицевой поверхностью
-                  </span>
-                  <div className="price price-box">
-                    <span>
-                      12 190 <span className="currency">₽</span>
-                    </span>
-                  </div>
-                  <div className="price-b">
-                    <a className="price-button price-button__text" href="#">
-                      В корзину
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="product-container">
-              <div className="product">
-                <a href="more.html">
-                  <img className="product-img" src={wheelf32} alt="" />
-                </a>
-                <div className="tovar">
-                  <span className="tovar-title">NZ F-32</span>
-                  <span className="tovar-title__small">Код товара</span>
-                  <span className="tovar-title__small">
-                    Литой , белый с полированной лицевой поверхностью
-                  </span>
-                  <div className="price price-box">
-                    <span>
-                      12 190 <span className="currency">₽</span>
-                    </span>
-                  </div>
-                  <div className="price-b">
-                    <a className="price-button price-button__text" href="#">
-                      В корзину
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProductCard tireType={Sun} />
+            <ProductCard tireType={Ice} />
+            <ProductCard tireType={Sun} />
           </div>
           <div className="main-bottom">
             <div className="main-top__content">
@@ -226,7 +86,7 @@ function ContentPage({ sortItems }) {
           </div>
         </div>
       </div>
-    </content>
+    </div>
   );
 }
 

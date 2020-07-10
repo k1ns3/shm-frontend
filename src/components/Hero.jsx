@@ -1,6 +1,9 @@
 import React from 'react';
 
+// Кнопка "заказать шиномонтаж
+
 function Hero() {
+  //TODO: Добавить слайдер
   return (
     <div className="hero">
       <div className="container">

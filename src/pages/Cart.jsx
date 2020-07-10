@@ -2,6 +2,8 @@ import React from 'react';
 
 import { wheelf32, deleteSvg } from '../assets/img';
 
+// Корзина
+
 function Cart() {
   {
     /*TODO: перевести на гриды, заменить переключатели*/

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Выпадающее меню, блок телефонов
+
 function Navbar({ menuItems }) {
   const [activeMenuButton, setActiveMenuButton] = React.useState(false);
   const menuRef = React.useRef();

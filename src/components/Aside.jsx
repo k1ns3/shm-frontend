@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Боковая панель
+
 function Aside() {
   {
     /*TODO: отформатировать на другие checkboxes. Разобраться со стилизацией*/

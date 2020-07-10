@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Основная панель с товарами
+
 import { Ice, Sun, wheelf32 } from '../assets/img';
 import { FilterMenu } from './index';
 

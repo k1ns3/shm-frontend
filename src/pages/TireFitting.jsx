@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Шиномонтаж
+
 function TireFitting() {
   return (
     <div className="cart">

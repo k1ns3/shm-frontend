@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Главная страница
+
 import { Aside, ContentPage, Hero } from '../components';
 
 function Home() {

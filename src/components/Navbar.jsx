@@ -5,8 +5,6 @@ function Navbar({ menuItems }) {
   const [activeMenuButton, setActiveMenuButton] = React.useState(false);
   const menuRef = React.useRef();
 
-  console.log(activeMenuButton);
-
   const toggleMenuButton = () => {
     setActiveMenuButton(!activeMenuButton);
   };

@@ -7,7 +7,9 @@ function Home() {
     <div>
       <Hero />
       <Aside />
-      <ContentPage />
+      <ContentPage
+        sortItems={['по умолчанию', 'возрастанию цены', 'убыванию цены']}
+      />
     </div>
   );
 }

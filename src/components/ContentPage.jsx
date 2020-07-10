@@ -3,7 +3,13 @@ import React from 'react';
 import { Ice, Sun, wheelf32 } from '../assets/img';
 import { FilterMenu } from './index';
 
-function ContentPage() {
+function ContentPage({ sortItems }) {
+  const [activeSortItem, setActiveSortItem] = React.useState(0);
+
+  const toggleActiveSortItem = (index) => {
+    setActiveSortItem(index);
+  };
+
   return (
     <content className="main">
       <div className="container">
@@ -13,16 +19,20 @@ function ContentPage() {
             <div className="main-top__content">
               <div className="sort">
                 <div className="sort_top">
-                  <span className="sort_top-header">Сортировать</span>
-                  <a className="sort_top-content__active_top" href="#">
-                    по умолчанию
-                  </a>
-                  <a className="sort_top-content" href="#">
-                    возрастанию цены
-                  </a>
-                  <a className="sort_top-content" href="#">
-                    убыванию цены
-                  </a>
+                  <span className="sort_top-header">Сортировать: </span>
+                  {sortItems &&
+                    sortItems.map((name, index) => (
+                      <a
+                        className={
+                          activeSortItem === index
+                            ? 'sort_top-content__active_top'
+                            : 'sort_top-content'
+                        }
+                        key={`${name}_${index}`}
+                        onClick={() => toggleActiveSortItem(index)}>
+                        {name}
+                      </a>
+                    ))}
                 </div>
               </div>
             </div>

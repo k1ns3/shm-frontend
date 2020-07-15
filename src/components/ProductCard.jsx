@@ -1,9 +1,8 @@
 import React from 'react';
-import { wheelf32 } from '../assets/img';
 import { Link } from 'react-router-dom';
 import { Ice, Sun } from '../assets/img';
 
-const ProductCard = ({ tirePhoto, season, brand, model, price }) => {
+const ProductCard = ({ tirePhoto, season, model, price }) => {
   return (
     <div className="product-container">
       <img
@@ -16,7 +15,7 @@ const ProductCard = ({ tirePhoto, season, brand, model, price }) => {
           <img className="product-img" src={tirePhoto} alt="itemImage" />
         </Link>
         <div className="tovar">
-          <span className="tovar-title">{brand}</span>
+          <span className="tovar-title">{model}</span>
           <span className="tovar-title__small">Код товара</span>
           <span className="tovar-title__small">
             Литой , белый с полированной лицевой поверхностью

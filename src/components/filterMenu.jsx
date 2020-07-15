@@ -1,6 +1,7 @@
 import React from 'react';
 
 function FilterMenu() {
+// Мобильная версия фильтрации
   const [activeFilterMenu, setActiveFilterMenu] = React.useState(false);
   const buttonRef = React.useRef();
 

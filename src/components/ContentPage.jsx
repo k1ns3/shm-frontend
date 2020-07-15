@@ -1,6 +1,8 @@
 import React from 'react';
 
+
 import { ProductCard, FilterMenu } from './index';
+// Основная панель с товарами
 
 function ContentPage({ sortItems, items }) {
   const [activeSortItem, setActiveSortItem] = React.useState(0);

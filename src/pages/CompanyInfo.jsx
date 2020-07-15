@@ -1,5 +1,7 @@
 import React from 'react';
 
+// О компании
+
 function CompanyInfo() {
   {
     /*TODO: отформатировать на другие checkboxes. Разобраться со стилизацией*/

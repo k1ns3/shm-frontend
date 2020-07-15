@@ -4,3 +4,4 @@ export { default as Navbar } from './Navbar';
 export { default as ContentPage } from './ContentPage';
 export { default as Footer } from './Footer';
 export { default as FilterMenu } from './filterMenu';
+export { default as ProductCard } from './ProductCard';

@@ -2,6 +2,8 @@ import React from 'react';
 
 import { wheelf32, deleteSvg } from '../assets/img';
 
+// Корзина
+
 function Cart() {
   {
     /*TODO: перевести на гриды, заменить переключатели*/
@@ -44,7 +46,7 @@ function Cart() {
                 </div>
               </td>
               <td className="delete">
-                <a href="#" title="Удалить">
+                <a title="Удалить">
                   <img className="delete-img" src={deleteSvg} alt="delete" />
                 </a>
               </td>
@@ -74,7 +76,7 @@ function Cart() {
                 </div>
               </td>
               <td className="delete">
-                <a href="#" title="Удалить">
+                <a title="Удалить">
                   <img className="delete-img" src={deleteSvg} alt="delete" />
                 </a>
               </td>
@@ -88,12 +90,8 @@ function Cart() {
           </div>
         </div>
         <div className="buy">
-          <a href="#" className="buy-button__retry">
-            Продолжить покупки
-          </a>
-          <a href="form.html" className="buy-button__buy">
-            Оформить заказ
-          </a>
+          <a className="buy-button__retry">Продолжить покупки</a>
+          <a className="buy-button__buy">Оформить заказ</a>
         </div>
       </div>
     </div>

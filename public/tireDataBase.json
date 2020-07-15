@@ -1,0 +1,246 @@
+{
+  "tires":[
+    {
+      "id":100971,
+      "tirePhoto":"https://www.shinservice.ru/catalog/bridgestone/turanza_er-30.jpg",
+      "price":8011,
+      "diameter":"R18",
+      "width":245,
+      "model":"Turanza ER30",
+      "brand":"Bridgestone",
+      "season":"S",
+      "retail_price":"8980"
+    },
+    {
+      "id":101496,
+      "tirePhoto":"https://www.shinservice.ru/catalog/bridgestone/blizzak_dm-z3.jpg",
+      "price":8011,
+      "diameter":"R16",
+      "width":285,
+      "model":"Blizzak DM-Z3",
+      "brand":"Bridgestone",
+      "season":"W",
+      "retail_price":"8980"
+    },
+    {
+      "id":102670,
+      "tirePhoto":"https://www.shinservice.ru/catalog/bridgestone/turanza_er-30.jpg",
+      "price":5663,
+      "diameter":"R18",
+      "width":235,
+      "model":"Turanza ER30",
+      "brand":"Bridgestone",
+      "season":"S",
+      "retail_price":6350
+    },
+    {
+      "id":102671,
+      "tirePhoto":"https://www.shinservice.ru/catalog/kumho/kc11.jpg",
+      "price":3733,
+      "diameter":"R14C",
+      "width":165,
+      "model":"Power Grip KC11",
+      "brand":"Kumho",
+      "season":"W",
+      "retail_price":3920
+    },
+    {
+      "id":157919,
+      "tirePhoto":"https://www.shinservice.ru/catalog/kumho/kw27.jpg",
+      "price":7643,
+      "diameter":"R17",
+      "width":255,
+      "model":"I'Zen KW27",
+      "brand":"Kumho",
+      "season":"W",
+      "retail_price":8330
+    },
+    {
+      "id":157955,
+      "tirePhoto":"https://www.shinservice.ru/catalog/kumho/road_venture_mt_kl71.jpg",
+      "price":8970,
+      "diameter":"R15",
+      "width":33,
+      "model":"Road Venture MT KL71",
+      "brand":"Kumho",
+      "season":"S",
+      "retail_price":10040
+    },
+    {
+      "id":158240,
+      "tirePhoto":"https://www.shinservice.ru/catalog/bridgestone/rd_613_steel.jpg",
+      "price":4106,
+      "diameter":"R15C",
+      "width":195,
+      "model":"RD613 STEEL",
+      "brand":"Bridgestone",
+      "season":"S",
+      "retail_price":4600
+    },
+    {
+      "id":158257,
+      "tirePhoto":"https://www.shinservice.ru/catalog/bridgestone/potenza_re-031.jpg",
+      "price":8499,
+      "diameter":"R18",
+      "width":235,
+      "model":"Potenza RE031",
+      "brand":"Bridgestone",
+      "season":"S",
+      "retail_price":9520
+    },
+    {
+      "id":158774,
+      "tirePhoto":"https://www.shinservice.ru/catalog/michelin/alpin_a3.jpg",
+      "price":3190,
+      "diameter":"R14",
+      "width":185,
+      "model":"Alpin 3",
+      "brand":"Michelin",
+      "season":"W",
+      "retail_price":3350
+    },
+    {
+      "id":158777,
+      "tirePhoto":"https://www.shinservice.ru/catalog/michelin/pilot_sport_ps2.jpg",
+      "price":27858,
+      "diameter":"R20",
+      "width":275,
+      "model":"Pilot Sport 2",
+      "brand":"Michelin",
+      "season":"S",
+      "retail_price":31200
+    },
+    {
+      "id":158812,
+      "tirePhoto":"https://www.shinservice.ru/catalog/michelin/latitude_tour_hp.jpg",
+      "price":5795,
+      "diameter":"R16",
+      "width":215,
+      "model":"Latitude Tour HP",
+      "brand":"Michelin",
+      "season":"S",
+      "retail_price":6500
+    },
+    {
+      "id":159186,
+      "tirePhoto":"https://www.shinservice.ru/catalog/kumho/road_venture_at_kl78.jpg",
+      "price":6960,
+      "diameter":"R16",
+      "width":315,
+      "model":"Road Venture AT KL78",
+      "brand":"Kumho",
+      "season":"S",
+      "retail_price":6960
+    },
+    {
+      "id":159316,
+      "tirePhoto":"https://www.shinservice.ru/catalog/kumho/kc15.jpg",
+      "price":10171,
+      "diameter":"R20",
+      "width":275,
+      "model":"I'Zen RV KC15",
+      "brand":"Kumho",
+      "season":"W",
+      "retail_price":6960
+    },
+    {
+      "id":159475,
+      "tirePhoto":"https://www.shinservice.ru/catalog/michelin/latitude_tour_hp.jpg",
+      "price":6960,
+      "diameter":"R16",
+      "width":275,
+      "model":"Latitude Tour HP",
+      "brand":"Michelin",
+      "season":"S",
+      "retail_price":6960
+    },
+    {
+      "id":159535,
+      "tirePhoto":"https://www.shinservice.ru/catalog/michelin/latitude_sport.jpg",
+      "price":11857,
+      "diameter":"R19",
+      "width":275,
+      "model":"Latitude Sport",
+      "brand":"Michelin",
+      "season":"S",
+      "retail_price":13280
+    },
+    {
+      "id":159539,
+      "tirePhoto":"https://www.shinservice.ru/catalog/michelin/latitude_cross.jpg",
+      "price":9263,
+      "diameter":"R18",
+      "width":235,
+      "model":"Latitude Cross",
+      "brand":"Michelin",
+      "season":"S",
+      "retail_price":10380
+    },
+    {
+      "id":159578,
+      "tirePhoto":"https://www.shinservice.ru/catalog/kumho/kw27.jpg",
+      "price":8590,
+      "diameter":"R18",
+      "width":275,
+      "model":"I'Zen KW27",
+      "brand":"Kumho",
+      "season":"W",
+      "retail_price":9020
+    },
+    {
+      "id":159586,
+      "tirePhoto":"https://www.shinservice.ru/catalog/kumho/road_venture_at_kl78.jpg",
+      "price":3810,
+      "diametr":"R20",
+      "width":355,
+      "model":"Road Venture AT KL78",
+      "brand":"Kumho",
+      "season":"S",
+      "retail_price":3810
+    },
+    {
+      "id":159663,
+      "tirePhoto":"https://www.shinservice.ru/catalog/bridgestone/hpsport_2.jpg",
+      "price":8171,
+      "diametr":"R18",
+      "width":265,
+      "model":"Dueler H/P Sport",
+      "brand":"Bridgestone",
+      "season":"S",
+      "retail_price":9160
+    },
+    {
+      "id":159669,
+      "tirePhoto":"https://www.shinservice.ru/catalog/bridgestone/hpsport_2.jpg",
+      "price":7612,
+      "diametr":"R18",
+      "width":255,
+      "model":"Dueler H/P Sport",
+      "brand":"Bridgestone",
+      "season":"S",
+      "retail_price":8530
+    },
+    {
+      "id":159841,
+      "tirePhoto":"https://www.shinservice.ru/catalog/nokian/nokian-rotiva-at.jpg",
+      "price":4907,
+      "diametr":"R15",
+      "width":235,
+      "model":"Rotiiva A",
+      "brand":"Nokian",
+      "season":"S",
+      "retail_price":5500
+    },
+    {
+      "id":160032,
+      "tirePhoto":"https://www.shinservice.ru/catalog/michelin/latitude_tour_hp.jpg",
+      "price":8730,
+      "diametr":"R18",
+      "width":255,
+      "model":"Latitude Tour HP",
+      "brand":"Michelin",
+      "season":"S",
+      "retail_price":9780
+    }
+  ]
+}

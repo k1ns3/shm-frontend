@@ -2,6 +2,8 @@ import React from 'react';
 
 import { wheelQuatro } from '../assets/img';
 
+// Дошиповка колёс
+
 function WheelStudding() {
   {/*TODO: отформатировать компонент*/}
   return (

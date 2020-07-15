@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Spez } from '../assets/img';
 
+// Хранение колёс
+
 function WheelStorage() {
   return (
     <div className="cart">

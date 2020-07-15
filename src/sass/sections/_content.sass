@@ -1,5 +1,5 @@
 .main
-  &-block 
+  &-block
     width: 80%
     float: right
   &-top
@@ -18,69 +18,42 @@
 .sort
     padding: 11px 0
     display: flex
-    flex-direction: space-between
-    float: right  
-    &_top 
-      &-header
-        margin: 6px
-        padding: 0 12px
-        +bold
-      &-content   
-        padding: 0 12px 
-        margin: 0px 0px 0px 12px  
-        text-decoration: none
-        color: $top     
-        line-height: 30px
-        cursor: pointer
-        &__active
-          &_top
-            border-radius: 15px
-            padding: 5px 12px 
-            margin: 0px 0px 0px 12px  
-            background-color: #5e6364
-            color: #fff
-            text-decoration: none
-          &_bottom
-            box-sizing: border-box
-            padding: 6px 14px 
-            margin: 0px 3px 
-            width: 34px
-            height: 34px    
-            border-radius: 20px
-            background-color: #5e6364
-            color: #fff
-            text-decoration: none
+    justify-content: space-between
+    float: right
     &-header
       margin: 6px
       padding: 0 12px
       +bold
-    &-content   
-      padding: 0 12px 
-      margin: 0px 0px 0px 12px  
+    &-content
+      padding: 0 12px
+      margin: 0px 0px 0px 12px
       text-decoration: none
-      color: $top     
+      color: $top
       line-height: 30px
-      &__active
+      cursor: pointer
+      &.active
         &_top
           border-radius: 15px
-          padding: 5px 12px 
-          margin: 0px 0px 0px 12px  
+          padding: 5px 12px
+          margin: 0px 0px 0px 12px
           background-color: #5e6364
           color: #fff
           text-decoration: none
+          cursor: default
         &_bottom
           box-sizing: border-box
-          padding: 6px 14px 
-          margin: 0px 3px 
+          padding: 0px 12px
+          margin: 0px 3px
           width: 34px
-          height: 34px    
+          height: 34px
           border-radius: 20px
           background-color: #5e6364
           color: #fff
-          text-decoration: none      
+          text-decoration: none
 .catalog
   display: flex
-  flex-direction: space-between
+  flex-wrap: wrap
+  justify-content: space-between
 .product-container
     width: 33.3%
     height: 480px

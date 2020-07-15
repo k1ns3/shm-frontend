@@ -1,24 +1,29 @@
 import React from 'react';
 import { wheelf32 } from '../assets/img';
 import { Link } from 'react-router-dom';
+import { Ice, Sun } from '../assets/img';
 
-const ProductCard = ({ tireType }) => {
+const ProductCard = ({ tirePhoto, season, brand, model, price }) => {
   return (
     <div className="product-container">
-      <img className="product-img__ice" src={tireType} alt="ice" />
+      <img
+        className="product-img__ice"
+        src={season === 'S' ? Sun : Ice}
+        alt="ice"
+      />
       <div className="product">
         <Link to="carditem">
-          <img className="product-img" src={wheelf32} alt="itemImage" />
+          <img className="product-img" src={tirePhoto} alt="itemImage" />
         </Link>
         <div className="tovar">
-          <span className="tovar-title">NZ F-32</span>
+          <span className="tovar-title">{brand}</span>
           <span className="tovar-title__small">Код товара</span>
           <span className="tovar-title__small">
             Литой , белый с полированной лицевой поверхностью
           </span>
           <div className="price price-box">
             <span>
-              12 190 <span className="currency">₽</span>
+              {price} <span className="currency">₽</span>
             </span>
           </div>
           <div className="price-b">

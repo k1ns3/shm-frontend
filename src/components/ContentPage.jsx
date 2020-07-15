@@ -1,9 +1,8 @@
 import React from 'react';
 
-import { Ice, Sun } from '../assets/img';
 import { ProductCard, FilterMenu } from './index';
 
-function ContentPage({ sortItems }) {
+function ContentPage({ sortItems, items }) {
   const [activeSortItem, setActiveSortItem] = React.useState(0);
 
   const toggleActiveSortItem = (index) => {
@@ -39,12 +38,8 @@ function ContentPage({ sortItems }) {
           </div>
           <div className="container">
             <div className="catalog">
-              <ProductCard tireType={Ice} />
-              <ProductCard tireType={Sun} />
-              <ProductCard tireType={Ice} />
-              <ProductCard tireType={Ice} />
-              <ProductCard tireType={Ice} />
-              <ProductCard tireType={Ice} />
+              {items &&
+                items.map((item) => <ProductCard key={item.id} {...item} />)}
             </div>
 
             {/*{TODO: переписать этот блок}*/}

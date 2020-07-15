@@ -37,50 +37,49 @@ function ContentPage({ sortItems }) {
               </div>
             </div>
           </div>
-          <div className="container"></div>
-          <div className="catalog">
-            <ProductCard tireType={Ice} />
-            <ProductCard tireType={Sun} />
-            <ProductCard tireType={Ice} />
-          </div>
-          <div className="catalog">
-            <ProductCard tireType={Sun} />
-            <ProductCard tireType={Ice} />
-            <ProductCard tireType={Sun} />
-          </div>
-          <div className="main-bottom">
-            <div className="main-top__content">
-              <div className="sort">
-                <a className="sort-content__active_bottom" href="#">
-                  1
-                </a>
-                <a className="sort-content" href="#">
-                  2
-                </a>
-                <a className="sort-content" href="#">
-                  3
-                </a>
-                <a className="sort-content" href="#">
-                  4
-                </a>
-                <a className="sort-content" href="#">
-                  5
-                </a>
-                <a className="main-button main-button__text" href="#">
-                  Далее
-                </a>
-              </div>
-              <div className="limit top">
-                <span className="top-header">Показать</span>
-                <a className="top-content__active" href="#">
-                  60
-                </a>
-                <a className="top-content" href="#">
-                  120
-                </a>
-                <a className="top-content" href="#">
-                  240
-                </a>
+          <div className="container">
+            <div className="catalog">
+              <ProductCard tireType={Ice} />
+              <ProductCard tireType={Sun} />
+              <ProductCard tireType={Ice} />
+              <ProductCard tireType={Ice} />
+              <ProductCard tireType={Ice} />
+              <ProductCard tireType={Ice} />
+            </div>
+            <div className="main-bottom">
+              <div className="main-top__content">
+                <div className="sort">
+                  <a className="sort-content__active_bottom" href="#">
+                    1
+                  </a>
+                  <a className="sort-content" href="#">
+                    2
+                  </a>
+                  <a className="sort-content" href="#">
+                    3
+                  </a>
+                  <a className="sort-content" href="#">
+                    4
+                  </a>
+                  <a className="sort-content" href="#">
+                    5
+                  </a>
+                  <a className="main-button main-button__text" href="#">
+                    Далее
+                  </a>
+                </div>
+                <div className="limit top">
+                  <span className="top-header">Показать</span>
+                  <a className="top-content__active" href="#">
+                    60
+                  </a>
+                  <a className="top-content" href="#">
+                    120
+                  </a>
+                  <a className="top-content" href="#">
+                    240
+                  </a>
+                </div>
               </div>
             </div>
           </div>

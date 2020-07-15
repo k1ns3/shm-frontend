@@ -241,6 +241,17 @@
       "brand":"Michelin",
       "season":"S",
       "retail_price":9780
+    },
+    {
+      "id":160033,
+      "tirePhoto":"https://www.shinservice.ru/catalog/michelin/latitude_tour_hp.jpg",
+      "price":8730,
+      "diametr":"R18",
+      "width":255,
+      "model":"Latitude Tour HP",
+      "brand":"Michelin",
+      "season":"S",
+      "retail_price":9780
     }
   ]
 }

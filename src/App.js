@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import { Navbar, Footer } from './components';
+import { NavBar, Footer } from './components';
 import {
   Home,
   TireFitting,
@@ -54,7 +54,7 @@ function App() {
   return (
     <div>
       <header className="header">
-        <Navbar menuItems={menuLinks} />
+        <NavBar menuItems={menuLinks} />
       </header>
       <main>
         <Route path="/" component={Home} exact />

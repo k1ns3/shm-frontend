@@ -1,3 +1,5 @@
+@import "../colors"
+
 .sidebar
   &-block
     float: left
@@ -5,8 +7,7 @@
 .aside_filters
     &-heading
       -webkit-user-select: none
-      padding: 23px 0 10px
-      padding-left: 5px
+      padding: 23px 0 10px 5px
       &__content
       font-size: 16px
       +bold
@@ -43,7 +44,7 @@
 .top
     padding: 11px 0
     display: none
-    flex-direction: space-between
+    justify-content: space-between
     float: left   
     &-header
       margin: 6px
@@ -137,7 +138,7 @@
       border: none
       height: 50px
       width: 70px
-  .mfilter
+  .aside_filters
     &-option
       label
         font-size: 14px

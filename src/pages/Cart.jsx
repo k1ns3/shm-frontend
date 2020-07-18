@@ -84,8 +84,8 @@ function Cart() {
           </tbody>
         </table>
         <div className="result">
-          <div className="itog">Итог</div>
-          <div className="summa">
+          <div className="conclusion">Итог</div>
+          <div className="amount">
             24 380<span className="currency">₽</span>
           </div>
         </div>

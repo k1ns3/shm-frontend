@@ -1,3 +1,5 @@
+@import "../colors"
+
 .cart
   padding-top: 180px
   padding-bottom: 400px
@@ -16,7 +18,7 @@
       +bold
       padding: 5px 10px 4px 0
   .name
-    padding: 12px 30px 12px 0px
+    padding: 12px 30px 12px 0
     display: flex
     width: 46%
     margin: 0
@@ -46,12 +48,12 @@
       margin: 20%
 .result
   display: flex
-  flex-direction: space-between
+  justify-content: space-between
   padding: 10px
-.itog
+.conclusion
   +bold
   margin-left: 78%
-.summa
+.amount
   +bold
   padding-left: 35px
 .buy
@@ -59,7 +61,7 @@
   padding-bottom: 100px
   float: right
   display: flex
-  flex-direction: space-between
+  justify-content: space-between
   &-button 
     &__retry
       text-decoration: none
@@ -129,10 +131,10 @@ table
       margin: 0px
       width: 120px
       height: 120px
-  .summa
+  .amount
     font-size: 16px
     padding-left: 10px
-  .itog
+  .conclusion
     +bold
     font-size: 16px
     margin-left: 65%
@@ -145,7 +147,7 @@ table
           font-size: 12px
           color: $top
       &-img
-        margin: 0px 12px 0px 0px
+        margin-right: 12px
         width: 118px
         height: 118px
     .delete

@@ -20,7 +20,7 @@ const menuLinks = [
   },
   {
     id: 1,
-    link: '/shinomontaj',
+    link: '/mounting',
     title: 'Шиномонтаж',
   },
   {
@@ -58,12 +58,12 @@ function App() {
       </header>
       <main>
         <Route path="/" component={Home} exact />
-        <Route path="/shinomontaj" component={TireFitting} exact />
+        <Route path="/mounting" component={TireFitting} exact />
         <Route path="/storage" component={WheelStorage} exact />
         <Route path="/knitting" component={WheelStudding} exact />
         <Route path="/info" component={CompanyInfo} exact />
         <Route path="/Cart" component={Cart} exact />
-        <Route path="/carditem" component={ProductCardDescription} exact />
+        <Route path="/item" component={ProductCardDescription} exact />
       </main>
       <footer className="footer">
         <Footer />

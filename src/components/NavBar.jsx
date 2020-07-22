@@ -44,9 +44,9 @@ function NavBar({ menuItems }) {
               ref={menuRef}
               onClick={toggleMenuButton}
               className="menu-button navBar__menu-button">
-              <span className="menu-button__line"></span>
-              <span className="menu-button__line"></span>
-              <span className="menu-button__line"></span>
+              <span className="menu-button__line" />
+              <span className="menu-button__line" />
+              <span className="menu-button__line" />
             </button>
             <div className="logo navBar__logo">
               <strong className="logo__text">РемШинМонтаж</strong>

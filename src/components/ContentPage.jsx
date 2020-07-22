@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import { ProductCard, FilterMenu } from './index';
 // Основная панель с товарами
 

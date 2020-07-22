@@ -22,7 +22,7 @@ function Footer() {
               <a href="https://vk.com/remshinmontagh">
                 <img
                   className="ig"
-                  src="img/icons/icons8-вконтакте-filled.svg"
+                  src={'img/icons/icons8-вконтакте-filled.svg'}
                   alt="vk"
                 />
               </a>
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className="hr">
-          <span className="hr__line"></span>
+          <span className="hr__line" />
         </div>
         <div className="second-row">
           <div className="first">

@@ -345,9 +345,9 @@ function FilterMenu() {
       <button
         onClick={toggleActiveFilterMenu}
         className="top_menu-button navbar__menu-button">
-        <span className="top_menu-button__line"></span>
-        <span className="top_menu-button__line"></span>
-        <span className="top_menu-button__line"></span>
+        <span className="top_menu-button__line" />
+        <span className="top_menu-button__line" />
+        <span className="top_menu-button__line" />
       </button>
     </div>
   );

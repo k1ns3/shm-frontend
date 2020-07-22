@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Ice, Sun } from '../assets/img';
+import PropTypes from 'prop-types';
 
 const ProductCard = ({ tirePhoto, season, model, price }) => {
   return (
@@ -32,6 +33,12 @@ const ProductCard = ({ tirePhoto, season, model, price }) => {
       </div>
     </div>
   );
+};
+ProductCard.propTypes = {
+  tirePhoto: PropTypes.string,
+  season: PropTypes.string,
+  model: PropTypes.string,
+  price: PropTypes.number,
 };
 
 export default ProductCard;

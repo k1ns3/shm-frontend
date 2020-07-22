@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { ProductCard, FilterMenu } from './index';
 // Основная панель с товарами
@@ -68,5 +69,10 @@ function ContentPage({ sortItems, items }) {
     </div>
   );
 }
+
+ContentPage.propTypes = {
+  sortItems: PropTypes.arrayOf(PropTypes.string),
+  items: PropTypes.arrayOf(PropTypes.object),
+};
 
 export default ContentPage;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 // Выпадающее меню, блок телефонов
 
@@ -79,5 +80,9 @@ function NavBar({ menuItems }) {
     </div>
   );
 }
+
+NavBar.propTypes = {
+  menuItems: PropTypes.arrayOf(PropTypes.object),
+};
 
 export default NavBar;

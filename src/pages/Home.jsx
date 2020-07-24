@@ -1,27 +1,45 @@
 import React from 'react';
+import { Aside, ContentPage, Hero } from '../components';
+import { connect } from 'react-redux';
+import { setTires } from '../redux/actions/tires';
 
 // Главная страница
 
-import { Aside, ContentPage, Hero } from '../components';
-
-function Home() {
-  const [tires, setTires] = React.useState([]);
-
-  React.useEffect(() => {
+class Home extends React.Component {
+  componentDidMount() {
     fetch('http://localhost:3000/tireDataBase.json').then((response) =>
-      response.json().then((data) => setTires(data.tires))
+      response.json().then((data) => this.props.setTires(data.tires))
     );
-  }, []);
-  return (
-    <div>
-      <Hero />
-      <Aside />
-      <ContentPage
-        sortItems={['по умолчанию', 'возрастанию цены', 'убыванию цены']}
-        items={tires}
-      />
-    </div>
-  );
+  }
+
+  render() {
+    return (
+      <div>
+        <Hero />
+        <Aside />
+        <ContentPage
+          sortItems={[
+            { name: 'по умолчанию', type: 'popular' },
+            { name: 'возрастанию цены', type: 'priceTop' },
+            { name: 'убыванию цены', type: 'priceDown' },
+          ]}
+          items={this.props.items}
+        />
+      </div>
+    );
+  }
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    items: state.tires.items,
+  };
+};
+
+const mapDispathToProps = (dispatch) => {
+  return {
+    setTires: (items) => dispatch(setTires(items)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispathToProps)(Home);

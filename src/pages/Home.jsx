@@ -1,24 +1,23 @@
 import React from 'react';
+import { Aside, ContentPage, Hero } from '../components';
+import { useSelector } from 'react-redux';
 
 // Главная страница
 
-import { Aside, ContentPage, Hero } from '../components';
-
 function Home() {
-  const [tires, setTires] = React.useState([]);
+  const items = useSelector(({ tires }) => tires.items);
 
-  React.useEffect(() => {
-    fetch('http://localhost:3000/tireDataBase.json').then((response) =>
-      response.json().then((data) => setTires(data.tires))
-    );
-  }, []);
   return (
     <div>
       <Hero />
       <Aside />
       <ContentPage
-        sortItems={['по умолчанию', 'возрастанию цены', 'убыванию цены']}
-        items={tires}
+        sortItems={[
+          { name: 'по умолчанию', type: 'popular' },
+          { name: 'возрастанию цены', type: 'priceTop' },
+          { name: 'убыванию цены', type: 'priceDown' },
+        ]}
+        items={items}
       />
     </div>
   );

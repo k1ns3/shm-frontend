@@ -17,7 +17,7 @@ function Cart() {
               <td className="name">Товар</td>
               <td className="quantity">Количество</td>
               <td className="price">Цена</td>
-              <td className="delete"></td>
+              <td className="delete" />
             </tr>
           </thead>
           <tbody>

@@ -22,16 +22,16 @@ function ContentPage({ sortItems, items }) {
                 <div className="sort_top">
                   <span className="sort-header">Сортировать: </span>
                   {sortItems &&
-                    sortItems.map((name, index) => (
+                    sortItems.map((item, index) => (
                       <a
                         className={
                           activeSortItem === index
                             ? 'sort-content active_top'
                             : 'sort-content'
                         }
-                        key={`${name}_${index}`}
+                        key={`${item}_${index}`}
                         onClick={() => toggleActiveSortItem(index)}>
-                        {name}
+                        {item.name}
                       </a>
                     ))}
                 </div>

@@ -39,27 +39,21 @@ function Footer() {
           <div className="twice">
             <div className="title">Способы оплаты</div>
             <div className="icons">
-              <a href="#">
-                <img
-                  className="ig"
-                  src="https://toplogos.ru/images/thumbs/preview-logo-mastercard.png"
-                  alt="mastercard"
-                />
-              </a>
-              <a href="#">
-                <img
-                  className="ig"
-                  src="https://toplogos.ru/images/thumbs/preview-logo-visa.png"
-                  alt="visa"
-                />
-              </a>
-              <a href="#">
-                <img
-                  className="ig"
-                  src="https://toplogos.ru/images/thumbs/preview-logo-mir.png"
-                  alt="mir"
-                />
-              </a>
+              <img
+                className="ig"
+                src="https://toplogos.ru/images/thumbs/preview-logo-mastercard.png"
+                alt="mastercard"
+              />
+              <img
+                className="ig"
+                src="https://toplogos.ru/images/thumbs/preview-logo-visa.png"
+                alt="visa"
+              />
+              <img
+                className="ig"
+                src="https://toplogos.ru/images/thumbs/preview-logo-mir.png"
+                alt="mir"
+              />
             </div>
           </div>
         </div>

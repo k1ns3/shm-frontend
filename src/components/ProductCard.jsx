@@ -27,7 +27,9 @@ const ProductCard = ({ tirePhoto, season, model, price }) => {
             </span>
           </div>
           <div className="price-b">
-            <a className="price-button price-button__text">В корзину</a>
+            <a href={() => false} className="price-button price-button__text">
+              В корзину
+            </a>
           </div>
         </div>
       </div>

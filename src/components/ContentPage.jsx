@@ -24,6 +24,7 @@ function ContentPage({ sortItems, items }) {
                   {sortItems &&
                     sortItems.map((item, index) => (
                       <a
+                        href={() => false}
                         className={
                           activeSortItem === index
                             ? 'sort-content active_top'
@@ -48,18 +49,38 @@ function ContentPage({ sortItems, items }) {
             <div className="main-bottom">
               <div className="main-top__content">
                 <div className="sort">
-                  <a className="sort-content active_bottom">1</a>
-                  <a className="sort-content">2</a>
-                  <a className="sort-content">3</a>
-                  <a className="sort-content">4</a>
-                  <a className="sort-content">5</a>
-                  <a className="main-button main-button__text">Далее</a>
+                  <a href={() => false} className="sort-content active_bottom">
+                    1
+                  </a>
+                  <a href={() => false} className="sort-content">
+                    2
+                  </a>
+                  <a href={() => false} className="sort-content">
+                    3
+                  </a>
+                  <a href={() => false} className="sort-content">
+                    4
+                  </a>
+                  <a href={() => false} className="sort-content">
+                    5
+                  </a>
+                  <a
+                    href={() => false}
+                    className="main-button main-button__text">
+                    Далее
+                  </a>
                 </div>
                 <div className="limit top">
                   <span className="top-header">Показать</span>
-                  <a className="top-content__active">60</a>
-                  <a className="top-content">120</a>
-                  <a className="top-content">240</a>
+                  <a href={() => false} className="top-content__active">
+                    60
+                  </a>
+                  <a href={() => false} className="top-content">
+                    120
+                  </a>
+                  <a href={() => false} className="top-content">
+                    240
+                  </a>
                 </div>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { wheelf32 } from '../assets/img';
 
 const ProductCardDescription = () => {
   return (
@@ -6,7 +7,7 @@ const ProductCardDescription = () => {
       <div className="container">
         <div className="goods">
           <div className="goods-block">
-            <img src="img/content/F-32.wfp.jpg" alt="logo" />
+            <img src={wheelf32} alt="logo" />
             <div className="g-table">
               <div className="g-table__name">Характеристики:</div>
               <div className="g-table__item">
@@ -53,7 +54,7 @@ const ProductCardDescription = () => {
                 <div className="g-table__ed">28 шт.</div>
               </div>
               <div className="go-price">
-                <a href="#" className="buy-button__buy">
+                <a href={() => false} className="buy-button__buy">
                   В корзину
                 </a>
               </div>

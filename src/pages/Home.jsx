@@ -1,23 +1,11 @@
 import React from 'react';
 import { Aside, ContentPage, Hero } from '../components';
-import { useSelector, useDispatch } from 'react-redux';
-import { setTires } from '../redux/actions/tires';
+import { useSelector } from 'react-redux';
 
 // Главная страница
 
 function Home() {
-  const dispatch = useDispatch();
-  const { items } = useSelector(({ tires }) => {
-    return {
-      items: tires.items,
-    };
-  });
-
-  React.useEffect(() => {
-    fetch('http://localhost:3000/tireDataBase.json').then((response) =>
-      response.json().then((data) => dispatch(setTires(data.tires)))
-    );
-  }, []);
+  const items = useSelector(({ tires }) => tires.items);
 
   return (
     <div>

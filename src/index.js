@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
-import './sass/style.sass';
+import './scss/style.scss';
 
 import App from './App';
 

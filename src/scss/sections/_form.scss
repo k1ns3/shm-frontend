@@ -1,0 +1,182 @@
+@import "../fonts";
+
+.form-flat{
+  padding-bottom: 20px;
+  &__title{
+    font-size: 25px;
+    padding: 20px 0 6px;
+    @include bold;
+  }
+  .methods{
+    margin: 10px 0 20px;
+    display: flex;
+    max-width: 700px;
+    .flat{
+      border-radius: 8px;
+      border: 1px solid #b5b5b5;
+      margin: 0 13px 0 0;
+      padding: 20px 20px 30px;
+      width: 50%;
+      height: 171px;
+      &:hover{
+        border-color: #ff7800;
+        cursor: pointer;
+      }
+      &-title{
+        margin: 0 20px 0 0;
+        padding: 0 0 6px;
+        font-size: 20px;
+        @include bold;
+      }
+      p{
+        font-size: 16px;
+        @include light;
+      }
+    }
+    .ship{
+      border-radius: 8px;
+      border: 1px solid #b5b5b5;
+      margin: 0 13px 0 0;
+      padding: 20px 20px 30px;
+      width: 50%;
+      height: 171px;
+      &:hover{
+        border-color: #ff7800;
+        cursor: pointer;
+      }
+      &-title{
+        margin: 0 20px 0 0;
+        padding: 0 0 6px;
+        font-size: 20px;
+        @include bold;
+      }
+      p{
+        font-size: 16px;
+        @include light;
+      }
+    }
+  }
+}
+
+.pad-sm{
+  padding: 8px 0;
+  .pad{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    @include light;
+    &-name{
+      padding: 8px 0 0;
+      width: 20%;
+      &_app{
+        text-align: center;
+        padding: 8px 0 0;
+        width: 16%;
+      }
+      &_housing{
+        text-align: center;
+        padding: 8px 0 0;
+        width: 16%;
+      }
+    }
+    .form-block{
+      padding: 25px 60px 25px 30px;
+      font-size: 16px;
+      border-radius: 15px;
+      background: #edf4fa;
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+    .fluid{
+      width: 80%;
+      &-last{
+        width: 16%;
+      }
+    }
+  }
+}
+
+input[type=email], input[type=password], input[type=text] {
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  border-radius: 4px;
+  height: 36px!important;
+  padding: 8px!important;
+  line-height: 20px!important;
+}
+
+.hit{
+  font-size: 12px;
+  color: #717171;
+  @include light;
+}
+
+@media (max-width: 991px){
+  .pad-sm{
+    padding: 8px 0;
+    .pad{
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 576px){
+  .form-flat{
+    padding-bottom: 20px;
+    &__title{
+      font-size: 25px;
+      padding: 20px 0 6px;
+      @include bold;
+    }
+    .methods{
+      margin: 10px 0 20px;
+      display: flex;
+      max-width: 700px;
+      .flat{
+        border-radius: 8px;
+        border: 1px solid #b5b5b5;
+        margin: 0 13px 0 0;
+        padding: 20px 20px 30px;
+        width: 50%;
+        height: 200px;
+        &:hover{
+          border-color: #ff7800;
+          cursor: pointer;
+        }
+        &-title{
+          margin: 0 20px 0 0;
+          padding: 0 0 6px;
+          font-size: 16px;
+          @include bold;
+        }
+        p{
+          font-size: 12px;
+          @include light;
+        }
+      }
+      .ship{
+        border-radius: 8px;
+        border: 1px solid #b5b5b5;
+        margin: 0 13px 0 0;
+        padding: 20px 20px 30px;
+        width: 50%;
+        height: 200px;
+        &:hover{
+          border-color: #ff7800;
+          cursor: pointer;
+        }
+        &-title{
+          margin: 0 20px 0 0;
+          padding: 0 0 6px;
+          font-size: 16px;
+          @include bold;
+        }
+        p{
+          font-size: 12px;
+          @include light;
+        }
+      }
+    }
+  }
+}

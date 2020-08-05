@@ -16,9 +16,10 @@ function Aside() {
                 <div className="aside_filters-options__scroll">
                   <div className="aside_filters-option">
                     <div className="aside_filters-option row__radiobutton">
-                      <label htmlFor="1">
-                        <input name="search" id="1" type="radio" />
-                        <label>Д</label>иски
+                      <label>
+                        {/*TODO: переделать весь блок по примеру*/}
+                        <input id="r1" type="radio" name="radio" value="1" />
+                        <label htmlFor="r1">Диски</label>
                       </label>
                     </div>
                     <div className="aside_filters-option row__radiobutton">

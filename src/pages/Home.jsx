@@ -1,6 +1,7 @@
 import React from 'react';
 import { Aside, ContentPage, Hero } from '../components';
 import { useSelector } from 'react-redux';
+import { asideFilterItems, sortItems } from '../assets/constants/constants';
 
 // Главная страница
 
@@ -10,15 +11,8 @@ function Home() {
   return (
     <div>
       <Hero />
-      <Aside />
-      <ContentPage
-        sortItems={[
-          { name: 'по умолчанию', type: 'popular' },
-          { name: 'возрастанию цены', type: 'priceTop' },
-          { name: 'убыванию цены', type: 'priceDown' },
-        ]}
-        items={items}
-      />
+      <Aside asideFiltersItems={asideFilterItems} />
+      <ContentPage sortItems={sortItems} items={items} />
     </div>
   );
 }

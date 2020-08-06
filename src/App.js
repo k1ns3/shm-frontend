@@ -13,44 +13,7 @@ import {
 } from './pages';
 import { setTires } from './redux/actions/tires';
 import { useDispatch } from 'react-redux';
-
-const menuLinks = [
-  {
-    id: 0,
-    link: '/',
-    title: 'Главная',
-  },
-  {
-    id: 1,
-    link: '/mounting',
-    title: 'Шиномонтаж',
-  },
-  {
-    id: 2,
-    link: '/storage',
-    title: 'Сезонное хранение',
-  },
-  {
-    id: 3,
-    link: '/knitting',
-    title: 'Дошиповка',
-  },
-  {
-    id: 4,
-    link: '#',
-    title: 'О компании',
-  },
-  {
-    id: 5,
-    link: '/info',
-    title: 'Информация',
-  },
-  {
-    id: 6,
-    link: '#',
-    title: 'Контакты',
-  },
-];
+import { menuLinks } from './assets/constants/constants';
 
 function App() {
   const dispatch = useDispatch();

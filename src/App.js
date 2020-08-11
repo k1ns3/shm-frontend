@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import axios from 'axios';
 
 import { NavBar, Footer } from './components';
 import {
@@ -19,10 +20,11 @@ function App() {
   const dispatch = useDispatch();
 
   React.useEffect(() => {
-    fetch('http://localhost:3000/tireDataBase.json').then((response) =>
-      response.json().then((data) => dispatch(setTires(data.tires)))
-    );
+    axios.get('http://localhost:3001/tires').then(({ data }) => {
+      dispatch(setTires(data));
+    });
   }, [dispatch]);
+
   return (
     <div>
       <header className="header">

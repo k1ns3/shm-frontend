@@ -1,6 +1,6 @@
 const initialState = {
   items: [],
-  isLoading: false,
+  isLoaded: false,
 };
 
 const tires = (state = initialState, action) => {
@@ -9,7 +9,7 @@ const tires = (state = initialState, action) => {
       return {
         ...state,
         items: action.payload,
-        isLoading: true,
+        isLoaded: true,
       };
     default:
       return state;

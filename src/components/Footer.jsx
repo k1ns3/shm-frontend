@@ -22,7 +22,7 @@ function Footer() {
               <a href="https://vk.com/remshinmontagh">
                 <img
                   className="ig"
-                  src="img/icons/icons8-вконтакте-filled.svg"
+                  src={'img/icons/icons8-вконтакте-filled.svg'}
                   alt="vk"
                 />
               </a>
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className="hr">
-          <span className="hr__line"></span>
+          <span className="hr__line" />
         </div>
         <div className="second-row">
           <div className="first">
@@ -39,27 +39,21 @@ function Footer() {
           <div className="twice">
             <div className="title">Способы оплаты</div>
             <div className="icons">
-              <a href="#">
-                <img
-                  className="ig"
-                  src="https://toplogos.ru/images/thumbs/preview-logo-mastercard.png"
-                  alt="mastercard"
-                />
-              </a>
-              <a href="#">
-                <img
-                  className="ig"
-                  src="https://toplogos.ru/images/thumbs/preview-logo-visa.png"
-                  alt="visa"
-                />
-              </a>
-              <a href="#">
-                <img
-                  className="ig"
-                  src="https://toplogos.ru/images/thumbs/preview-logo-mir.png"
-                  alt="mir"
-                />
-              </a>
+              <img
+                className="ig"
+                src="https://toplogos.ru/images/thumbs/preview-logo-mastercard.png"
+                alt="mastercard"
+              />
+              <img
+                className="ig"
+                src="https://toplogos.ru/images/thumbs/preview-logo-visa.png"
+                alt="visa"
+              />
+              <img
+                className="ig"
+                src="https://toplogos.ru/images/thumbs/preview-logo-mir.png"
+                alt="mir"
+              />
             </div>
           </div>
         </div>

@@ -1,18 +1,22 @@
 import React from 'react';
 
-import { wheelQuatro } from '../assets/img';
+import { wheelQuatro } from '../../assets/img';
 
 // Дошиповка колёс
+// TODO: отформатировать компонент
 
 function WheelStudding() {
-  {/*TODO: отформатировать компонент*/}
   return (
     <div className="cart">
       <div className="container">
         <div className="doship">
           <div className="doship-block">
             <div className="doship-block__row">
-              <img src={wheelQuatro} className="doship-block__img" />
+              <img
+                src={wheelQuatro}
+                className="doship-block__img"
+                alt="wheel-img"
+              />
               <ul>
                 <li>
                   увеличенный диаметр корпуса и основного фланца для надёжного

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 // Выпадающее меню, блок телефонов
 
-function Navbar({ menuItems }) {
+function NavBar({ menuItems }) {
   const [activeMenuButton, setActiveMenuButton] = React.useState(false);
   const menuRef = React.useRef();
 
@@ -37,40 +38,40 @@ function Navbar({ menuItems }) {
           </nav>
         </div>
       </div>
-      <div className="navbar">
+      <div className="navBar">
         <div className="container">
-          <div className="navbar-wrap">
+          <div className="navBar-wrap">
             <button
               ref={menuRef}
               onClick={toggleMenuButton}
-              className="menu-button navbar__menu-button">
-              <span className="menu-button__line"></span>
-              <span className="menu-button__line"></span>
-              <span className="menu-button__line"></span>
+              className="menu-button navBar__menu-button">
+              <span className="menu-button__line" />
+              <span className="menu-button__line" />
+              <span className="menu-button__line" />
             </button>
-            <div className="logo navbar__logo">
+            <div className="logo navBar__logo">
               <strong className="logo__text">РемШинМонтаж</strong>
               <span className="logo__desk">Шиномонтажка в центре №1</span>
             </div>
-            <div className="navbar__mobile">
-              <a className="navbar__phone" href="tel:89650274397">
+            <div className="navBar__mobile">
+              <a className="navBar__phone" href="tel:89650274397">
                 8 (965) 027-43-97
               </a>
-              <span className="navbar_work-time navbar__small-text">
+              <span className="navBar_work-time navBar__small-text">
                 ПН-ВС: с 9:00 до 20:00
               </span>
             </div>
-            <div className="navbar__mobile1">
-              <a className="navbar__phone" href="tel:89218914979">
+            <div className="navBar__mobile1">
+              <a className="navBar__phone" href="tel:89218914979">
                 8 (921) 891-49-79
               </a>
               <a
-                className="navbar_email navbar__small-text"
+                className="navBar_email navBar__small-text"
                 href="mailto:Remshinmontage@gmail.com">
                 Remshinmontage@gmail.com
               </a>
             </div>
-            <Link to="/cart" className="button-o navbar__button">
+            <Link to="/cart" className="button-o navBar__button">
               Товаров в корзине
             </Link>
           </div>
@@ -80,4 +81,8 @@ function Navbar({ menuItems }) {
   );
 }
 
-export default Navbar;
+NavBar.propTypes = {
+  menuItems: PropTypes.arrayOf(PropTypes.object),
+};
+
+export default NavBar;

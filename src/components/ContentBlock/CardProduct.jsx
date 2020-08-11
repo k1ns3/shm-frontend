@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Ice, Sun } from '../assets/img';
+import { Ice, Sun } from '../../assets/img';
+import PropTypes from 'prop-types';
 
-const ProductCard = ({ tirePhoto, season, model, price }) => {
+const CardProduct = ({ tirePhoto, season, model, price }) => {
   return (
     <div className="product-container">
       <img
@@ -14,10 +15,10 @@ const ProductCard = ({ tirePhoto, season, model, price }) => {
         <Link to="carditem">
           <img className="product-img" src={tirePhoto} alt="itemImage" />
         </Link>
-        <div className="tovar">
-          <span className="tovar-title">{model}</span>
-          <span className="tovar-title__small">Код товара</span>
-          <span className="tovar-title__small">
+        <div className="item">
+          <span className="item-title">{model}</span>
+          <span className="item-title__small">Код товара</span>
+          <span className="item-title__small">
             Литой , белый с полированной лицевой поверхностью
           </span>
           <div className="price price-box">
@@ -26,12 +27,20 @@ const ProductCard = ({ tirePhoto, season, model, price }) => {
             </span>
           </div>
           <div className="price-b">
-            <a className="price-button price-button__text">В корзину</a>
+            <a href={() => false} className="price-button price-button__text">
+              В корзину
+            </a>
           </div>
         </div>
       </div>
     </div>
   );
 };
+CardProduct.propTypes = {
+  tirePhoto: PropTypes.string,
+  season: PropTypes.string,
+  model: PropTypes.string,
+  price: PropTypes.number,
+};
 
-export default ProductCard;
+export default CardProduct;

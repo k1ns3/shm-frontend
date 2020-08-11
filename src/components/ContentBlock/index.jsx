@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ProductCard, FilterMenu } from './index';
+import { ProductCard, MobileFilterMenu } from '../index';
+import CardProduct from './CardProduct';
 // Основная панель с товарами
 
-function ContentPage({ sortItems, items }) {
+function Index({ sortItems, items }) {
   const [activeSortItem, setActiveSortItem] = React.useState(0);
 
   const toggleActiveSortItem = (index) => {
@@ -16,7 +17,7 @@ function ContentPage({ sortItems, items }) {
       <div className="container">
         <div className="main-block">
           <div className="main-top">
-            <FilterMenu />
+            <MobileFilterMenu />
             <div className="main-top__content">
               <div className="sort">
                 <div className="sort_top">
@@ -42,7 +43,7 @@ function ContentPage({ sortItems, items }) {
           <div className="container">
             <div className="catalog">
               {items &&
-                items.map((item) => <ProductCard key={item.id} {...item} />)}
+                items.map((item) => <CardProduct key={item.id} {...item} />)}
             </div>
 
             {/*{TODO: переписать этот блок}*/}
@@ -91,9 +92,9 @@ function ContentPage({ sortItems, items }) {
   );
 }
 
-ContentPage.propTypes = {
-  sortItems: PropTypes.arrayOf(PropTypes.string),
+Index.propTypes = {
+  sortItems: PropTypes.arrayOf(PropTypes.object),
   items: PropTypes.arrayOf(PropTypes.object),
 };
 
-export default ContentPage;
+export default Index;

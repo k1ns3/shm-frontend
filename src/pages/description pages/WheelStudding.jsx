@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { wheelQuatro } from '../assets/img';
+import { wheelQuatro } from '../../assets/img';
 
 // Дошиповка колёс
 // TODO: отформатировать компонент

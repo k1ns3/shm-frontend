@@ -1,9 +1,9 @@
 import React from 'react';
-import AsideFilterItem from './AsideFilterItem';
+import AsideFilterElement from './AsideFilterItem';
 
 // Боковая панель
 // TODO: разобраться со стейтом радиобаттонов
-function Aside({ asideFiltersItems }) {
+function Index({ asideFiltersItems }) {
   console.log(asideFiltersItems);
   return (
     <div className="sidebar bg-secondary">
@@ -11,10 +11,14 @@ function Aside({ asideFiltersItems }) {
         <div className="sidebar__block sidebar-block">
           <div className="main-top">
             {asideFiltersItems &&
-              asideFiltersItems.map((item) => (
-                <div className="aside_filters">
-                  <div className="aside_filters-heading">
-                    <div className="aside_filters-heading__content">
+              asideFiltersItems.map((item, index) => (
+                <div className="aside_filters" key={`${item}_${index}`}>
+                  <div
+                    className="aside_filters-heading"
+                    key={`${item}-${index}`}>
+                    <div
+                      className="aside_filters-heading__content"
+                      key={`${item}+${index}`}>
                       {item.label}
                     </div>
                   </div>
@@ -23,7 +27,7 @@ function Aside({ asideFiltersItems }) {
                       <div className="aside_filters-option">
                         {item.items &&
                           item.items.map((item, index) => (
-                            <AsideFilterItem
+                            <AsideFilterElement
                               key={`${item.value}_${index}`}
                               {...item}
                             />
@@ -41,4 +45,4 @@ function Aside({ asideFiltersItems }) {
   );
 }
 
-export default Aside;
+export default Index;

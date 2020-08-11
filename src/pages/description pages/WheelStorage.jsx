@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Spez } from '../assets/img';
+import { Spez } from '../../assets/img';
 
 // Хранение колёс
 

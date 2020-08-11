@@ -1,5 +1,5 @@
 import React from 'react';
-import { wheelf32 } from '../assets/img';
+import { wheelf32 } from '../../assets/img';
 
 const ProductCardDescription = () => {
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import axios from 'axios';
 
 import { NavBar, Footer } from './components';
 import {
@@ -12,19 +11,9 @@ import {
   Cart,
   ProductCardDescription,
 } from './pages';
-import { setTires } from './redux/actions/tires';
-import { useDispatch } from 'react-redux';
 import { menuLinks } from './assets/constants/constants';
 
 function App() {
-  const dispatch = useDispatch();
-
-  React.useEffect(() => {
-    axios.get('http://localhost:3001/tires').then(({ data }) => {
-      dispatch(setTires(data));
-    });
-  }, [dispatch]);
-
   return (
     <div>
       <header className="header">

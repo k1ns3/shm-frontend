@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FilterMenu() {
+function MobileFilterMenu() {
   // Мобильная версия фильтрации
   const [activeFilterMenu, setActiveFilterMenu] = React.useState(false);
   const buttonRef = React.useRef();
@@ -353,4 +353,4 @@ function FilterMenu() {
   );
 }
 
-export default FilterMenu;
+export default MobileFilterMenu;

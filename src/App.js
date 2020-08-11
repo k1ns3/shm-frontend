@@ -11,18 +11,9 @@ import {
   Cart,
   ProductCardDescription,
 } from './pages';
-import { setTires } from './redux/actions/tires';
-import { useDispatch } from 'react-redux';
 import { menuLinks } from './assets/constants/constants';
 
 function App() {
-  const dispatch = useDispatch();
-
-  React.useEffect(() => {
-    fetch('http://localhost:3000/tireDataBase.json').then((response) =>
-      response.json().then((data) => dispatch(setTires(data.tires)))
-    );
-  }, [dispatch]);
   return (
     <div>
       <header className="header">

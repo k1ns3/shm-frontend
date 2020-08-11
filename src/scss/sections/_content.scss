@@ -68,24 +68,26 @@
 .catalog{
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-}
-
-.product-container{
-  width: 33.3%;
-  height: 480px;
-  position: relative;
+  justify-content: flex-start;
 }
 
 .product{
   max-height: 441px;
   z-index: 2;
   padding: 12px;
-  background-color: $bg-secondary;
   transition: none;
   position: absolute;
   border-radius: 3px;
   text-align: center;
+  img{
+    width: 280px;
+    height: 280px;
+  }
+  &-container{
+    width: 33.3%;
+    height: 480px;
+    position: relative;
+  }
   &:hover{
     .price-b{
       transform: translateY(0);
@@ -115,7 +117,7 @@
   }
 }
 
-.tovar{
+.item{
   display: flex;
   flex-direction: column;
   &-title{
@@ -168,12 +170,12 @@
 }
 
 @media (max-width: 1199px){
-  .product-container{
-    width: 33.3%;
-    height: 350px;
-    position: relative;
-  }
   .product{
+    &-container{
+      width: 33.3%;
+      height: 350px;
+      position: relative;
+    }
     &-img{
       &__sun{
         margin-left: 80%;

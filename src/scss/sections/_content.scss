@@ -71,52 +71,6 @@
   justify-content: flex-start;
 }
 
-.product{
-  max-height: 441px;
-  z-index: 2;
-  padding: 12px;
-  transition: none;
-  position: absolute;
-  border-radius: 3px;
-  text-align: center;
-  img{
-    width: 280px;
-    height: 280px;
-  }
-  &-container{
-    width: 33.3%;
-    height: 480px;
-    position: relative;
-  }
-  &:hover{
-    .price-b{
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  &-img{
-    width: 96%;
-    max-width: 329px;
-    max-height: 329px;
-    &__ice{
-      width: 25px;
-      height: 25px;
-      position: absolute;
-      z-index: 999;
-      margin-left: 85%;
-      margin-top: 5%;
-    }
-    &__sun{
-      width: 25px;
-      height: 25px;
-      position: absolute;
-      z-index: 998;
-      margin-left: 85%;
-      margin-top: 5%;
-    }
-  }
-}
-
 .item{
   display: flex;
   flex-direction: column;
@@ -206,6 +160,7 @@
   }
   .catalog{
     flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .sort_top{

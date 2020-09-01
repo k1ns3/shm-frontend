@@ -6,7 +6,7 @@ import AsideFilterElement from './AsideFilterItem';
 function Index({ asideFiltersItems }) {
   console.log(asideFiltersItems);
   return (
-    <div className="sidebar bg-secondary">
+    <div className="sidebar">
       <div className="container">
         <div className="sidebar__block sidebar-block">
           <div className="main-top">

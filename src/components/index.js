@@ -4,4 +4,4 @@ export { default as NavBar } from './NavBar';
 export { default as ContentPage } from './ContentBlock';
 export { default as Footer } from './Footer';
 export { default as MobileFilterMenu } from './ContentBlock/MobileFilterMenu';
-export { default as ProductCard } from './ContentBlock/CardProduct';
+export { default as ProductCard } from './ContentBlock/ItemCard';

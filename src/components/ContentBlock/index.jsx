@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { ProductCard, MobileFilterMenu } from '../index';
-import CardProduct from './CardProduct';
+import ItemCard from './ItemCard';
 // Основная панель с товарами
 
 function Index({ sortItems, items }) {
@@ -43,7 +43,7 @@ function Index({ sortItems, items }) {
           <div className="container">
             <div className="catalog">
               {items &&
-                items.map((item) => <CardProduct key={item.id} {...item} />)}
+                items.map((item) => <ItemCard key={item.id} {...item} />)}
             </div>
 
             {/*{TODO: переписать этот блок}*/}
